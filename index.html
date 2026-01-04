@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A romantic journey through our love story">
+    <title>Our Love Story ❤️</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="assets/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Music Control -->
+    <button id="musicToggle" class="music-toggle" aria-label="Toggle Music">
+        <i class="fas fa-music"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heart"></i>
+                <span>Our Story</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About Her</a></li>
+                <li><a href="#timeline" class="nav-link">Our Journey</a></li>
+                <li><a href="#gallery" class="nav-link">Memories</a></li>
+                <li><a href="#letters" class="nav-link">Love Letters</a></li>
+                <li><a href="#songs" class="nav-link">Our Songs</a></li>
+                <li><a href="#countdown" class="nav-link">Special Day</a></li>
+                <li><a href="#promise" class="nav-link">Forever</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Floating Hearts Animation -->
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <!-- Section 1: Landing Page -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">To the Love of My Life 💖</h1>
+            <p class="hero-subtitle animate-fade-in-delay">This website exists because of you</p>
+            <div class="hero-quote animate-fade-in-delay-2">
+                <i class="fas fa-quote-left"></i>
+                <p>"In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine."</p>
+                <i class="fas fa-quote-right"></i>
+            </div>
+            <button class="cta-button animate-fade-in-delay-3" onclick="scrollToSection('about')">
+                Start Our Story
+                <i class="fas fa-heart"></i>
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Section 2: About Her -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">Why I Love You</h2>
+            <div class="about-content">
+                <div class="polaroid-card">
+                    <div class="polaroid-image">
+                        <img src="assets/her-photo.jpg" alt="Her Beautiful Smile">
+                    </div>
+                    <p class="polaroid-caption">My Everything ❤️</p>
+                </div>
+                <div class="reasons-grid">
+                    <div class="reason-card">
+                        <i class="fas fa-smile"></i>
+                        <h3>Your Smile</h3>
+                        <p>The way you smile lights up my entire world. It's the most beautiful thing I've ever seen.</p>
+                    </div>
+                    <div class="reason-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>Your Heart</h3>
+                        <p>Your kindness, compassion, and the way you care for everyone around you makes me fall deeper every day.</p>
+                    </div>
+                    <div class="reason-card">
+                        <i class="fas fa-laugh"></i>
+                        <h3>Your Laugh</h3>
+                        <p>Your laughter is my favorite sound. It fills my heart with joy and makes everything better.</p>
+                    </div>
+                    <div class="reason-card">
+                        <i class="fas fa-home"></i>
+                        <h3>My Safe Place</h3>
+                        <p>You are my home, my comfort, my peace. With you, I am exactly where I belong.</p>
+                    </div>
+                    <div class="reason-card">
+                        <i class="fas fa-star"></i>
+                        <h3>Your Strength</h3>
+                        <p>The way you handle challenges with grace and courage inspires me to be a better person.</p>
+                    </div>
+                    <div class="reason-card">
+                        <i class="fas fa-infinity"></i>
+                        <h3>Everything</h3>
+                        <p>Every little thing about you - your quirks, your dreams, your soul - I love it all, infinitely.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Our Love Story Timeline -->
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <h2 class="section-title">Our Love Story</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>First Meeting 💕</h3>
+                        <span class="timeline-date">The Day Everything Changed</span>
+                        <p>The moment I saw you, I knew my life would never be the same. You walked into my world and made everything brighter.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        <h3>First Chat 📱</h3>
+                        <span class="timeline-date">The Beginning of Us</span>
+                        <p>Our first conversation lasted hours. I remember thinking, "I could talk to her forever." And I still feel that way.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <h3>First Date ☕</h3>
+                        <span class="timeline-date">Butterflies & Magic</span>
+                        <p>I was so nervous, but the moment you smiled, all my worries melted away. That day, I fell even harder.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-cloud-rain"></i>
+                        </div>
+                        <h3>First Fight 😅</h3>
+                        <span class="timeline-date">Growing Together</span>
+                        <p>Even our disagreements taught us something beautiful - that love means choosing each other, even when it's hard.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>First "I Love You" ❤️</h3>
+                        <span class="timeline-date">The Words That Changed Everything</span>
+                        <p>Three words, eight letters, infinite meaning. The moment I said it, I knew I meant it with every fiber of my being.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-infinity"></i>
+                        </div>
+                        <h3>Today & Forever ✨</h3>
+                        <span class="timeline-date">Our Beautiful Present & Future</span>
+                        <p>Every day with you is a gift. And I promise, our best days are still ahead of us.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Memory Gallery -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Our Beautiful Memories</h2>
+            <div class="gallery-tabs">
+                <button class="tab-btn active" data-tab="all">All Moments</button>
+                <button class="tab-btn" data-tab="smiles">Our Smiles</button>
+                <button class="tab-btn" data-tab="adventures">Adventures</button>
+                <button class="tab-btn" data-tab="silly">Silly Moments</button>
+            </div>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery items will be dynamically loaded -->
+                <div class="gallery-item" data-category="smiles">
+                    <img src="assets/gallery/photo1.jpg" alt="Beautiful Moment" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-heart"></i>
+                        <p class="gallery-caption">Your smile, my happiness</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="adventures">
+                    <img src="assets/gallery/photo2.jpg" alt="Adventure Together" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-heart"></i>
+                        <p class="gallery-caption">Exploring the world with you</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="silly">
+                    <img src="assets/gallery/photo3.jpg" alt="Silly Moment" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-heart"></i>
+                        <p class="gallery-caption">Being goofy together</p>
+                    </div>
+                </div>
+                <!-- Add more gallery items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightboxImg">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+        <button class="lightbox-nav prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-nav next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Section 5: Love Letters -->
+    <section id="letters" class="letters-section">
+        <div class="container">
+            <h2 class="section-title">Letters From My Heart</h2>
+            <div class="letters-grid">
+                <div class="envelope-card">
+                    <div class="envelope">
+                        <div class="envelope-flap"></div>
+                        <div class="envelope-body"></div>
+                    </div>
+                    <h3>To My Forever</h3>
+                    <button class="open-letter-btn" data-letter="1">Open Letter</button>
+                </div>
+                <div class="envelope-card">
+                    <div class="envelope">
+                        <div class="envelope-flap"></div>
+                        <div class="envelope-body"></div>
+                    </div>
+                    <h3>When You Miss Me</h3>
+                    <button class="open-letter-btn" data-letter="2">Open Letter</button>
+                </div>
+                <div class="envelope-card">
+                    <div class="envelope">
+                        <div class="envelope-flap"></div>
+                        <div class="envelope-body"></div>
+                    </div>
+                    <h3>Why I Choose You</h3>
+                    <button class="open-letter-btn" data-letter="3">Open Letter</button>
+                </div>
+                <div class="envelope-card">
+                    <div class="envelope">
+                        <div class="envelope-flap"></div>
+                        <div class="envelope-body"></div>
+                    </div>
+                    <h3>Our Future Together</h3>
+                    <button class="open-letter-btn" data-letter="4">Open Letter</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Letter Modal -->
+    <div id="letterModal" class="letter-modal">
+        <div class="letter-modal-content">
+            <span class="letter-close">&times;</span>
+            <div class="letter-paper">
+                <div class="letter-header">
+                    <h3 id="letterTitle">Letter Title</h3>
+                    <p class="letter-date" id="letterDate">Date</p>
+                </div>
+                <div class="letter-body" id="letterBody">
+                    <!-- Letter content will be inserted here -->
+                </div>
+                <div class="letter-signature">
+                    <p>Forever yours,</p>
+                    <p class="signature-name">Sujoy ❤️</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 6: Our Songs -->
+    <section id="songs" class="songs-section">
+        <div class="container">
+            <h2 class="section-title">Our Soundtrack</h2>
+            <p class="section-subtitle">Songs that remind me of us</p>
+            <div class="songs-grid">
+                <div class="song-card">
+                    <div class="song-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Our Song</h3>
+                    <p class="song-description">This song was playing when we first danced together. Every time I hear it, I'm back in that moment.</p>
+                    <div class="song-embed">
+                        <!-- Add Spotify/YouTube embed here -->
+                        <p class="embed-placeholder">🎵 Add your song link here</p>
+                    </div>
+                </div>
+                <div class="song-card">
+                    <div class="song-icon">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <h3>Late Night Vibes</h3>
+                    <p class="song-description">Our late-night conversations, this song playing in the background. Perfect moments.</p>
+                    <div class="song-embed">
+                        <p class="embed-placeholder">🎧 Add your song link here</p>
+                    </div>
+                </div>
+                <div class="song-card">
+                    <div class="song-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Reminds Me of You</h3>
+                    <p class="song-description">Every lyric, every note - it's like this song was written about us.</p>
+                    <div class="song-embed">
+                        <p class="embed-placeholder">💕 Add your song link here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Countdown -->
+    <section id="countdown" class="countdown-section">
+        <div class="container">
+            <h2 class="section-title">Counting Down To...</h2>
+            <div class="countdown-card">
+                <h3 class="countdown-event">Our Next Anniversary 💍</h3>
+                <div class="countdown-timer" id="countdownTimer">
+                    <div class="time-unit">
+                        <span class="time-value" id="days">00</span>
+                        <span class="time-label">Days</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="hours">00</span>
+                        <span class="time-label">Hours</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="minutes">00</span>
+                        <span class="time-label">Minutes</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="seconds">00</span>
+                        <span class="time-label">Seconds</span>
+                    </div>
+                </div>
+                <p class="countdown-message">Every second brings me closer to celebrating another year of loving you ❤️</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: Forever Promise -->
+    <section id="promise" class="promise-section">
+        <div class="container">
+            <div class="promise-content">
+                <h2 class="section-title">My Promise to You</h2>
+                <div class="promise-card">
+                    <div class="promise-text">
+                        <p class="promise-intro">My Dearest Love,</p>
+                        <p>I promise to love you in the sunshine and in the storms.</p>
+                        <p>I promise to be your biggest cheerleader, your safe haven, and your partner in all of life's adventures.</p>
+                        <p>I promise to make you laugh when you're sad, to hold you when you're scared, and to celebrate with you when you're happy.</p>
+                        <p>I promise to choose you, every single day, for the rest of my life.</p>
+                        <p>I promise to build a future with you that's filled with love, laughter, and endless beautiful moments.</p>
+                        <p class="promise-closing">I choose you. Every day. Forever.</p>
+                        <div class="promise-signature">
+                            <p>All my love, always and forever,</p>
+                            <p class="signature">Sujoy 💖</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="future-dreams">
+                    <h3>Our Future Dreams</h3>
+                    <div class="dreams-grid">
+                        <div class="dream-item">
+                            <i class="fas fa-home"></i>
+                            <p>Building our dream home together</p>
+                        </div>
+                        <div class="dream-item">
+                            <i class="fas fa-plane"></i>
+                            <p>Traveling the world hand in hand</p>
+                        </div>
+                        <div class="dream-item">
+                            <i class="fas fa-heart"></i>
+                            <p>Growing old together, still in love</p>
+                        </div>
+                        <div class="dream-item">
+                            <i class="fas fa-star"></i>
+                            <p>Creating countless beautiful memories</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-quote">"Love is not about how many days, months, or years you have been together. Love is about how much you love each other every single day."</p>
+            <p class="footer-copyright">Made with ❤️ by Sujoy | © 2026 Our Love Story</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
